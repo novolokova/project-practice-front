@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Header';
 import CONSTANTS from '../../constants';
 import SlideBar from '../../components/SlideBar/SlideBar';
 import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
   const [styleName, setStyle] = useState(styles.headline__static);
-  let timeout;
 
   useEffect(() => {
-    timeout = setInterval(() => {
+    const timeout = setInterval(() => {
       setIndex(index + 1);
       setStyle(styles.headline__isloading);
     }, 3000);
@@ -61,7 +61,8 @@ const Home = props => {
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
             </div>
-            <div className={styles.container__description}>
+            <HomeWhySquadhelp/>
+            {/* <div className={styles.container__description}>
               <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
               <div className={styles.cardContainer}>
                 <div className={styles.card}>
@@ -106,7 +107,7 @@ const Home = props => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className={styles.greyContainer}>
               <div className={styles.adv}>
                 <div className={styles.images}>
