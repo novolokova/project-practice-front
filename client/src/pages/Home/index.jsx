@@ -12,9 +12,9 @@ import styles from './Home.module.sass';
 import OurSponsors from '../../components/OurSponsors';
 import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 import HowDoContestWork from '../../components/HowDoContestWork';
+import BrandableNames from '../../components/BrandableNames';
 
-
-const Home = props => {
+const Home = (props) => {
   const [index, setIndex] = useState(0);
   const [styleName, setStyle] = useState(styles.headline__static);
 
@@ -54,7 +54,7 @@ const Home = props => {
                 for immediate purchase
               </p>
               <div className={styles.button}>
-                <Link className={styles.button__link} to='/dashboard'>
+                <Link className={styles.button__link} to="/dashboard">
                   DASHBOARD
                 </Link>
               </div>
@@ -65,90 +65,10 @@ const Home = props => {
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
             </div>
-            <HomeWhySquadhelp/>
-            <OurSponsors/>
-
-
-{/* 
-            <h2>How Do Name Contest Work?</h2>
-            <div className={styles.whiteContainer}>
-              <div className={styles.stepReverse}>
-                <div>
-                  <h3>Step 1: Launch a Naming Contest</h3>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      Start your project right with our proven Naming Brief
-                      template
-                    </span>
-                  </p>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      We’ll walk you through exactly what you need to share
-                      about your project in order to get an awesome Name
-                    </span>
-                  </p>
-                </div>
-                <img
-                  src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/1-compressed.gif`}
-                  alt='compressed'
-                />
-              </div>
-            </div>
-            <div className={styles.greenContainer}>
-              <div className={styles.step}>
-                <img
-                  src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/2-compressed-new.gif`}
-                  alt='compressed'
-                />
-                <div className={styles.greenStep}>
-                  <h3>Step 2: Ideas start pouring in within minutes</h3>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      100s of naming experts start submitting name ideas
-                    </span>
-                  </p>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      Names automatically checked for URL availability
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.greyContainer}>
-              <div className={styles.stepReverse}>
-                <div>
-                  <h3>Step 3: Rate Entries & Brainstorm with Creatives</h3>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>Provide instant feedback on Names</span>
-                  </p>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      Send private feedback or public messages to all creatives
-                    </span>
-                  </p>
-                  <p>
-                    <i className='fas fa-check' />
-                    <span>
-                      The more entries you rate - the submissions get better and
-                      better
-                    </span>
-                  </p>
-                </div>
-                <img
-                  src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/3-compressed.gif`}
-                  alt='compressed'
-                />
-              </div>
-            </div> */}
-
-<HowDoContestWork/>
+            <HomeWhySquadhelp />
+            <OurSponsors />
+            <HowDoContestWork />
+            <BrandableNames />
 
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
@@ -164,7 +84,7 @@ const Home = props => {
               carouselType={carouselConstants.EXAMPLE_SLIDER}
             />
             <div className={styles.button}>
-              <Link className={styles.button__link} to='/dashboard'>
+              <Link className={styles.button__link} to="/dashboard">
                 DASHBOARD
               </Link>
             </div>
@@ -183,7 +103,7 @@ const Home = props => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   const { isFetching } = state.userStore;
   return { isFetching };
 };
