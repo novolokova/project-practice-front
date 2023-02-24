@@ -1,0 +1,28 @@
+
+
+[
+    {
+        "imgPath":"sponsors/Forbes-inactive.png",
+        "alt": "forbes"
+    },
+    {
+        "imgPath":"sponsors/Forbes-active.png",
+        "alt": "forbes"
+    },
+    {
+        "imgPath":"sponsors/the_next_web_inactive.png",
+        "alt": "web"
+    },
+    {
+        "imgPath":"sponsors/the_next_web_active.png",
+        "alt": "web"
+    },
+    {
+        "imgPath":"sponsors/mashable-inactive.png",
+        "alt": "mashable"
+    },
+    {
+        "imgPath":"sponsors/mashable-active.png",
+        "alt": "mashable"
+    }
+]

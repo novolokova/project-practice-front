@@ -14,4 +14,3 @@ const CardArticle = (props) => {
 };
 
 export default CardArticle;
-
