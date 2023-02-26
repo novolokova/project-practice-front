@@ -1,29 +1,20 @@
 import React from 'react';
-import data from './data.json';
-import CONSTANTS from '../../constants'
-import styles from './HowDoContestWork.module.sass';
-import Step from './Step';
+import CONSTANTS from '../../../constants'
+import styles from '../HowDoContestWork.module.sass';
 
-const HowDoContestWork = () => {
-  const mapArticles = ({ titleStep, steps, imgPath, alt }, i) => (
-    <Step
-    key={i}
-    titleStep={titleStep}
-    steps={steps}
-    imgPath={imgPath}
-    alt={alt}
-    />
-  );
+const Step = (props) => {
+const{titleStep, steps, imgPath, alt}=props;
 
     return (
-       <>
-        <h2>{data.heading}</h2>
-<Step/>
-        {data.articles.map(mapArticles)}
+
+    // Питання. У кожного степа свій колір контейнера, та в залежності від номеру степа рендер, не четний - просто .step
+    // четний - .stepReverse
+    
 
 
-
-{/* 
+    
+        <>
+           
         <div className={styles.whiteContainer}>
           <div className={styles.stepReverse}>
             <div>
@@ -106,9 +97,9 @@ const HowDoContestWork = () => {
               alt='compressed'
             />
           </div>
-        </div> */}
+        </div> 
         </>
     );
 }
 
-export default HowDoContestWork;
+export default Step;

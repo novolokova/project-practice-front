@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import CloseIcon from '@mui/icons-material/Close';
+import {Close, Add} from '@mui/icons-material';
 import styles from '../AskedQuestions.module.scss';
 
 
@@ -22,7 +22,7 @@ const SingleQuestion = (props) => {
     >
       <header onClick={() => changeInfo()} className={styles.header}>
         <h3>{question}</h3>
-        <span className={styles.span}>{showInfo ? "x" : '+'}</span>
+        <span className={styles.span}>{showInfo ? <Close />: <Add/>}</span>
       </header>
       <div className={styles.wrap}>
         {showInfo && <ul>{showAnswer(answerList)}</ul>}
