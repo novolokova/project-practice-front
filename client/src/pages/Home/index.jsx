@@ -13,6 +13,7 @@ import OurSponsors from '../../components/OurSponsors';
 import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 import HowDoContestWork from '../../components/HowDoContestWork';
 import BrandableNames from '../../components/BrandableNames';
+import AskedQuestions from '../../components/AskedQuestions';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -69,6 +70,7 @@ const Home = (props) => {
             <OurSponsors />
             <HowDoContestWork />
             <BrandableNames />
+            <AskedQuestions />
 
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
