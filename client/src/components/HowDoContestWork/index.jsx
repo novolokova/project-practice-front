@@ -19,7 +19,7 @@ const HowDoContestWork = () => {
        <>
         <h2>{data.heading}</h2>
 <Step/>
-        {data.articles.map(mapArticles)}
+        {/* {data.articles.map(mapArticles)} */}
 
 
 

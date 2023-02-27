@@ -14,6 +14,7 @@ import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 import HowDoContestWork from '../../components/HowDoContestWork';
 import BrandableNames from '../../components/BrandableNames';
 import AskedQuestions from '../../components/AskedQuestions';
+import NamesForSale from '../../components/NamesForSale';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -72,7 +73,7 @@ const Home = (props) => {
             <BrandableNames />
             <AskedQuestions />
 
-            <div className={styles.headerBar}>
+            {/* <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
               <p className={styles.blueUnderline}>
                 Not interested in launching a contest? Purchase a name instantly
@@ -84,7 +85,11 @@ const Home = (props) => {
             <SlideBar
               images={carouselConstants.exampleSliderImages}
               carouselType={carouselConstants.EXAMPLE_SLIDER}
-            />
+            /> */}
+
+<NamesForSale/>
+
+
             <div className={styles.button}>
               <Link className={styles.button__link} to="/dashboard">
                 DASHBOARD
