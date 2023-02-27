@@ -15,9 +15,9 @@ import HowDoContestWork from '../../components/HowDoContestWork';
 import BrandableNames from '../../components/BrandableNames';
 import AskedQuestions from '../../components/AskedQuestions';
 import NamesForSale from '../../components/NamesForSale';
-import Dashboard from '../Dashboard/Dashboard';
-import DashboardBtn from '../../components/DashboardBtn';
 
+import DashboardBtn from '../../components/DashboardBtn';
+import CustomersSay from '../../components/CustomersSay';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -60,8 +60,7 @@ const Home = (props) => {
               </p>
             </div>
 
-
-            <DashboardBtn/>
+            <DashboardBtn />
 
             <div className={styles.greyContainer}>
               <SliderBar
@@ -80,18 +79,12 @@ const Home = (props) => {
             <SliderBar
               images={carouselConstants.exampleSliderImages}
               carouselType={carouselConstants.EXAMPLE_SLIDER}
-            />       
-            <DashboardBtn/>
-
-
-            <div className={styles.blueContainer}>
-              <h2 className={styles.whiteUnderline}>What our customers say</h2>
-              <SliderBar
-                images={carouselConstants.feedbackSliderImages}
-                carouselType={carouselConstants.FEEDBACK_SLIDER}
-              />
-            </div>
+            />
+            <DashboardBtn />
+         
+            <CustomersSay />
           </div>
+
           <Footer />
         </>
       )}
