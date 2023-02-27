@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Header from '../../components/Header';
-import SlideBar from '../../components/SlideBar/SlideBar';
+import SliderBar from '../../components/SliderBar';
 import Footer from '../../components/Footer/Footer';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
@@ -15,6 +15,9 @@ import HowDoContestWork from '../../components/HowDoContestWork';
 import BrandableNames from '../../components/BrandableNames';
 import AskedQuestions from '../../components/AskedQuestions';
 import NamesForSale from '../../components/NamesForSale';
+import Dashboard from '../Dashboard/Dashboard';
+import DashboardBtn from '../../components/DashboardBtn';
+
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -55,49 +58,35 @@ const Home = (props) => {
                 explore our hand-picked collection of premium names available
                 for immediate purchase
               </p>
-              <div className={styles.button}>
-                <Link className={styles.button__link} to="/dashboard">
-                  DASHBOARD
-                </Link>
-              </div>
             </div>
+
+
+            <DashboardBtn/>
+
             <div className={styles.greyContainer}>
-              <SlideBar
+              <SliderBar
                 images={carouselConstants.mainSliderImages}
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
             </div>
+
             <HomeWhySquadhelp />
             <OurSponsors />
             <HowDoContestWork />
             <BrandableNames />
             <AskedQuestions />
 
-            {/* <div className={styles.headerBar}>
-              <h3>Names For Sale</h3>
-              <p className={styles.blueUnderline}>
-                Not interested in launching a contest? Purchase a name instantly
-                from our hand-picked collection of premium names. Price includes
-                a complimentary Trademark Report, a Domain name as well as a
-                Logo design
-              </p>
-            </div>
-            <SlideBar
+            <NamesForSale />
+            <SliderBar
               images={carouselConstants.exampleSliderImages}
               carouselType={carouselConstants.EXAMPLE_SLIDER}
-            /> */}
+            />       
+            <DashboardBtn/>
 
-<NamesForSale/>
 
-
-            <div className={styles.button}>
-              <Link className={styles.button__link} to="/dashboard">
-                DASHBOARD
-              </Link>
-            </div>
             <div className={styles.blueContainer}>
               <h2 className={styles.whiteUnderline}>What our customers say</h2>
-              <SlideBar
+              <SliderBar
                 images={carouselConstants.feedbackSliderImages}
                 carouselType={carouselConstants.FEEDBACK_SLIDER}
               />
