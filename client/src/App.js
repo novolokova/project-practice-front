@@ -18,6 +18,7 @@ import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
+import PricingPage from './pages/PricingPage';
 
 class App extends Component {
   render () {
@@ -34,8 +35,10 @@ class App extends Component {
           draggable
           pauseOnHover
         />
+        
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/pricing' component={PricingPage} />
           <Route
             exact
             path='/login'

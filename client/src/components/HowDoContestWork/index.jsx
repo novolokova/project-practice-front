@@ -4,9 +4,26 @@ import CONSTANTS from '../../constants'
 import styles from './HowDoContestWork.module.sass';
 import Step from './Step';
 
+
+// писати 
+
+// const sctaticClass =[1,2,3]
+
+// const HowDoContestWork = () => {
+//   const mapArticles = ({ titleStep, steps, imgPath, alt }, i) => (
+//     <Step className={styles[sctaticClass[i]]}
+//     key={i}
+//     titleStep={titleStep}
+//     steps={steps}
+//     imgPath={imgPath}
+//     alt={alt}
+//     />
+//   );
+
+
 const HowDoContestWork = () => {
   const mapArticles = ({ titleStep, steps, imgPath, alt }, i) => (
-    <Step
+    <Step 
     key={i}
     titleStep={titleStep}
     steps={steps}
@@ -14,7 +31,6 @@ const HowDoContestWork = () => {
     alt={alt}
     />
   );
-
     return (
        <>
         <h2>{data.heading}</h2>
