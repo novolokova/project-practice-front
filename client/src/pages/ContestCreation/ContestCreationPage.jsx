@@ -6,7 +6,7 @@ import NextButton from '../../components/NextButton/NextButton';
 import ContestForm from '../../components/ContestForm/ContestForm';
 import BackButton from '../../components/BackButton/BackButton';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 
 const ContestCreationPage = props => {

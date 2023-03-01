@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Header from '../../components/Header';
 import SliderBar from '../../components/SliderBar';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/Footer';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 

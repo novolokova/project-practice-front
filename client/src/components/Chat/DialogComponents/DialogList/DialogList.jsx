@@ -11,7 +11,7 @@ import {
 import DialogBox from '../DialogBox/DialogBox';
 import styles from './DialogList.module.sass';
 
-const DialogList = props => {
+const DialogList = (props) => {
   const changeFavorite = (data, event) => {
     props.changeChatFavorite(data);
     event.stopPropagation();
@@ -33,7 +33,7 @@ const DialogList = props => {
   const onlyBlockDialogs = (chatPreview, userId) =>
     chatPreview.blackList[chatPreview.participants.indexOf(userId)];
 
-  const getTimeStr = time => {
+  const getTimeStr = (time) => {
     const currentTime = moment();
     if (currentTime.isSame(time, 'day')) return moment(time).format('HH:mm');
     if (currentTime.isSame(time, 'week')) return moment(time).format('dddd');
@@ -41,16 +41,9 @@ const DialogList = props => {
     return moment(time).format('MMMM DD, YYYY');
   };
 
-  const renderPreview = filterFunc => {
+  const renderPreview = (filterFunc) => {
     const arrayList = [];
-    const {
-      userId,
-      preview,
-      goToExpandedDialog,
-      chatMode,
-      removeChat,
-      interlocutor,
-    } = props;
+    const { userId, preview, goToExpandedDialog, chatMode, removeChat } = props;
     preview.forEach((chatPreview, index) => {
       const dialogNode = (
         <DialogBox
@@ -82,7 +75,6 @@ const DialogList = props => {
       <span className={styles.notFound}>Not found</span>
     );
   };
-
   const renderChatPreview = () => {
     const { chatMode } = props;
     if (chatMode === CONSTANTS.FAVORITE_PREVIEW_CHAT_MODE)
@@ -91,17 +83,15 @@ const DialogList = props => {
       return renderPreview(onlyBlockDialogs);
     return renderPreview();
   };
-
   return <div className={styles.previewContainer}>{renderChatPreview()}</div>;
 };
+const mapStateToProps = (state) => state.chatStore;
 
-const mapStateToProps = state => state.chatStore;
-
-const mapDispatchToProps = dispatch => ({
-  goToExpandedDialog: data => dispatch(goToExpandedDialog(data)),
-  changeChatFavorite: data => dispatch(changeChatFavorite(data)),
-  changeChatBlock: data => dispatch(changeChatBlock(data)),
-  changeShowAddChatToCatalogMenu: data =>
+const mapDispatchToProps = (dispatch) => ({
+  goToExpandedDialog: (data) => dispatch(goToExpandedDialog(data)),
+  changeChatFavorite: (data) => dispatch(changeChatFavorite(data)),
+  changeChatBlock: (data) => dispatch(changeChatBlock(data)),
+  changeShowAddChatToCatalogMenu: (data) =>
     dispatch(changeShowAddChatToCatalogMenu(data)),
 });
 

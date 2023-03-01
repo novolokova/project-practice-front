@@ -8,7 +8,7 @@ import {
   getCatalogList,
 } from '../../../../store/slices/chatSlice';
 import styles from './CatalogCreation.module.sass';
-import AddToCatalog from '../AddToCatalog/AddToCatalog';
+import AddToCatalog from '../AddToCatalog';
 import CreateCatalog from '../CreateCatalog/CreateCatalog';
 
 class CatalogCreation extends React.Component {

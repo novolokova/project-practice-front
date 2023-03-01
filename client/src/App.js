@@ -5,7 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import LoginPage from './pages/LoginPage/LoginPage';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 import Payment from './pages/Payment/Payment';
-import StartContestPage from './pages/StartContestPage/StartContestPage';
+import StartContestPage from './pages/StartContestPage/';
 import Dashboard from './pages/Dashboard/Dashboard';
 import PrivateHoc from './components/PrivateHoc/PrivateHoc';
 import NotFound from './components/NotFound/NotFound';
@@ -37,8 +37,8 @@ class App extends Component {
         />
         
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/pricing' component={PricingPage} />
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/pricing' component={PricingPage}/>
           <Route
             exact
             path='/login'
