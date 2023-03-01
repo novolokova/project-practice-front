@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
+import CONSTANTS from '../../constants';
 import data from './price.json';
 import PriceContent from './PriceContent';
-import styles from "./PriceSection.module.scss"
+import styles from './PriceSection.module.scss';
 
-const colors = [
-  { name: 'bronze', value: '#e0b48c' },
-  { name: 'gold', value: '#e8b954' },
-  { name: 'platinum', value: '#555' },
-  { name: 'managed', value: '#28d2d0' },
-];
 const initialState = data.map((elem, i) => ({
   id: elem.id,
   isOpen: i === 0 ? true : false,
@@ -30,13 +25,13 @@ const PriceSection = () => {
       handleClick={handleIsOpen}
       key={elem.id}
       priceContent={elem}
-      color={colors[i]}
+      color={CONSTANTS.colorsPrice[i]}
       isOpen={elemOpen[i]}
     />
   );
   return (
     <section className={styles.container}>
-      <ul className={styles.wrap} >{data.map(mapPriceContent)}</ul>
+      <ul className={styles.wrap}>{data.map(mapPriceContent)}</ul>
     </section>
   );
 };
