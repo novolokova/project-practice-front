@@ -36,8 +36,8 @@ const SelectInput = ({
     if (!initialValue && optionsArray) {
       setFieldValue(field.name, valueArray ? valueArray[0] : optionsArray[0]);
     }
-  }, []);
-
+  }, []); // eslint-disable-line 
+ 
   return (
     <div className={classes.inputContainer}>
       <span className={classes.inputHeader}>{header}</span>

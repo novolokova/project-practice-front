@@ -17,19 +17,19 @@ const SliderBar = props => {
 
   const getStyleName = () => {
     const { carouselType } = props;
-    switch (carouselType) {
+    switch (carouselType) { //eslint-disable-line
       case carouselConstants.MAIN_SLIDER:
         return style.mainCarousel;
       case carouselConstants.EXAMPLE_SLIDER:
         return style.exampleCarousel;
       case carouselConstants.FEEDBACK_SLIDER:
         return style.feedbackCarousel;
-    }
+    } 
   };
 
   const renderSlides = () => {
     const { carouselType } = props;
-    switch (carouselType) {
+    switch (carouselType) { //eslint-disable-line
       case carouselConstants.MAIN_SLIDER: {
         return Object.keys(props.images).map((key, index) => (
           <img

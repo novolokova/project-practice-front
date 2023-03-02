@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import browserHistory from './browserHistory';
 import LoginPage from './pages/LoginPage/LoginPage';
@@ -20,7 +20,7 @@ import CONSTANTS from './constants';
 
 const App =()=> {
       return (
-      <Router history={browserHistory}>
+      <BrowserRouter history={browserHistory}>
         <ToastContainer
           position='top-center'
           autoClose={5000}
@@ -86,7 +86,7 @@ const App =()=> {
           <Route component={NotFound} />
         </Switch>
         <ChatContainer />
-      </Router>
+      </BrowserRouter>
     );
   }
 
