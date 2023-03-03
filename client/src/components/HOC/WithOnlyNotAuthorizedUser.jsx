@@ -4,7 +4,7 @@ import { getUser } from '../../store/slices/userSlice';
 import Spinner from '../Spinner/Spinner';
 
 const WithOnlyNotAuthorizedUser = (Component, props) => {
-  class HocForLoginSignUp extends React.Component {
+  class Hoc extends React.Component {
     componentDidMount() {
       this.props.checkAuth(this.props.history.replace);
     }
@@ -22,7 +22,7 @@ const WithOnlyNotAuthorizedUser = (Component, props) => {
   const mapDispatchToProps = (dispatch) => ({
     checkAuth: (replace) => dispatch(getUser(replace)),
   });
-  return connect(mapStateToProps, mapDispatchToProps)(HocForLoginSignUp);
+  return connect(mapStateToProps, mapDispatchToProps)(Hoc);
 };
 
 export default WithOnlyNotAuthorizedUser;

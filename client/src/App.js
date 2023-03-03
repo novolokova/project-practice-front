@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import browserHistory from './browserHistory';
 import WithPrivate from './components/HOC/WithPrivate';
 import WithOnlyNotAuthorizedUser from './components/HOC/WithOnlyNotAuthorizedUser';
-import LoginPage from './pages/LoginPage/LoginPage';
+// import LoginPage from './pages/LoginPage/LoginPage';
 import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 import Home from './pages/Home';
@@ -17,6 +17,8 @@ import UserProfile from './pages/UserProfile/UserProfile';
 import NotFound from './components/NotFound/NotFound';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
 import CONSTANTS from './constants';
+import LoginPage from './pages/LoginPage';
+// import LoginPage from './pages/LoginPage/indexrrrr';
 
 const App =()=> {
       return (
