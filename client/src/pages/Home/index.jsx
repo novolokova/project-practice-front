@@ -38,7 +38,7 @@ const Home = (props) => {
             <OurSponsors />
             <HowDoContestWork />
             <BrandableNames />
-            <AskedQuestions />
+            <AskedQuestions/>
             <NamesForSale />
             <SliderBar
               images={carouselConstants.exampleSliderImages}

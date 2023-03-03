@@ -1,8 +1,8 @@
 import React from 'react';
 import data from './data.json';
+import Step from './Step';
 import CONSTANTS from '../../constants';
 import styles from './HowDoContestWork.module.scss';
-import Step from './Step';
 
 const HowDoContestWork = () => {
   const mapArticles = ({ id, titleStep, steps, imgPath, alt }, i) => (

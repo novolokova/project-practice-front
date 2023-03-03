@@ -23,7 +23,6 @@ const BrandableNames = () => {
     }));
     setBtnState(newState);
   };
-
   const mapBtn = (btn) => (
     <button
       key={btn.title}

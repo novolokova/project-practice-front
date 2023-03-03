@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Footer.module.sass';
 import CONSTANTS from '../../constants';
+import styles from './Footer.module.sass';
 
 const Footer = () => {
   const topFooterItemsRender = (item) => (
@@ -15,7 +15,6 @@ const Footer = () => {
   );
   const topFooterRender = () =>
     CONSTANTS.FOOTER_ITEMS.map((item) => topFooterItemsRender(item));
-
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footerTop}>

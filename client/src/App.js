@@ -32,7 +32,6 @@ const App =()=> {
           draggable
           pauseOnHover
         />
-        
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/pricing' component={PricingPage}/>
