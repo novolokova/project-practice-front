@@ -1,6 +1,6 @@
 import React from 'react';
 import CONSTANTS from '../../../../constants';
-import styles from '../../OurSponsors.module.sass';
+import styles from './Logo.module.sass';
 
 const Logo = (props) => {
   const { activeImgPath, inactiveImgPath, alt } = props;

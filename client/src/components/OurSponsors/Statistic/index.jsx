@@ -1,10 +1,10 @@
 import React from 'react';
 import data from './data.json';
-import styles from '../OurSponsors.module.sass';
+import styles from './Statistic.module.sass';
 
 const Statistic = () => {
-  const mapStats = ({ quantity, activity }) => (
-    <div>
+  const mapStats = ({ quantity, activity }, i) => (
+    <div key={i}>
       <p>{quantity}</p>
       <span>{activity}</span>
     </div>

@@ -14,7 +14,7 @@ const Footer = () => {
     </div>
   );
   const topFooterRender = () =>
-    CONSTANTS.FooterItems.map((item) => topFooterItemsRender(item));
+    CONSTANTS.FOOTER_ITEMS.map((item) => topFooterItemsRender(item));
 
   return (
     <div className={styles.footerContainer}>

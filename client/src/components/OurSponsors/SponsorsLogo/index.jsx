@@ -1,7 +1,7 @@
 import React from 'react';
 import data from './data.json';
-import styles from '../OurSponsors.module.sass';
 import Logo from './Logo';
+import styles from './SponsorsLogo.module.sass';
 
 const SponsorsLogo = () => {
   const mapImages = ({ activeImgPath, inactiveImgPath, alt }, i) => (

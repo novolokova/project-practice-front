@@ -2,6 +2,7 @@
   "heading": "How Do Name Contest Work?",
   "articles": [
     {
+      "id": 1,
       "titleStep": "Step 1: Launch a Naming Contest",
       "steps": [
         "Start your project right with our proven Naming Brief template",
@@ -11,6 +12,7 @@
       "alt": "compressed"
     },
     {
+      "id": 2,
       "titleStep": "Step 2: Ideas start pouring in within minutes",
       "steps": [
         "Sta100s of naming experts start submitting name ideasrte",
@@ -20,6 +22,7 @@
       "alt": "compressed"
     },
     {
+      "id": 3,
       "titleStep": "Step 3: Rate Entries & Brainstorm with Creatives",
       "steps": [
         "Provide instant feedback on Names",

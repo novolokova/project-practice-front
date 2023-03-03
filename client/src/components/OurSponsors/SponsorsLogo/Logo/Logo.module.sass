@@ -1,0 +1,34 @@
+
+    .images
+      img
+        max-height: 40px
+        cursor: pointer
+
+      img:first-child
+        display: block
+
+      img:last-child
+        display: none
+
+      &:hover
+        img
+          max-height: 40px
+          cursor: pointer
+
+        img:first-child
+          display: none
+
+        img:last-child
+          display: block
+
+
+      @media screen and (max-width: 414px)
+        img
+          max-height: 20px
+          max-width: 70px
+          margin: 0 30px
+
+        &:hover
+          max-height: 20px
+          max-width: 70px
+          margin: 0 30px

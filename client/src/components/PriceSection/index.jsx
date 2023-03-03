@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import CONSTANTS from '../../constants';
 import data from './price.json';
 import PriceContent from './PriceContent';
+import CONSTANTS from '../../constants';
 import styles from './PriceSection.module.scss';
 
 const initialState = data.map((elem, i) => ({
@@ -25,7 +25,7 @@ const PriceSection = () => {
       handleClick={handleIsOpen}
       key={elem.id}
       priceContent={elem}
-      color={CONSTANTS.colorsPrice[i]}
+      color={CONSTANTS.COLORS_PRICE[i]}
       isOpen={elemOpen[i]}
     />
   );

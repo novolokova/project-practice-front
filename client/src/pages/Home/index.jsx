@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import Header from '../../components/Header';
 import SliderBar from '../../components/SliderBar';
 import Footer from '../../components/Footer';
-import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import OurSponsors from '../../components/OurSponsors';
 import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
@@ -14,7 +13,7 @@ import NamesForSale from '../../components/NamesForSale';
 import DashboardBtn from '../../components/DashboardBtn';
 import CustomersSay from '../../components/CustomersSay';
 import FindPerfectName from '../../components/FindPerfectName';
-
+import carouselConstants from '../../carouselConstants';
 import styles from './Home.module.sass';
 
 const Home = (props) => {

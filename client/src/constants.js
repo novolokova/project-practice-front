@@ -46,7 +46,7 @@ const CONSTANTS = {
     'a Product',
     'a Startup',
   ],
-  FooterItems: [
+  FOOTER_ITEMS: [
     {
       title: 'SQUADHELP',
       items: ['About', 'Contact', 'How It Works?', 'Testimonials', 'Our Work'],
@@ -83,12 +83,18 @@ const CONSTANTS = {
     },
   ],
 
-  colorsPrice: [
+  COLORS_PRICE: [
     { name: 'bronze', value: '#e0b48c' },
     { name: 'gold', value: '#e8b954' },
     { name: 'platinum', value: '#555' },
     { name: 'managed', value: '#28d2d0' },
   ],
   MAX_WIDTH_PRICE:760,
+
+  COLORS_CONTAINER: [
+    { step: 1, bakgrColor: '#fff', textColor: 'black' },
+    { step: 2, bakgrColor: '#28D2D0', textColor: 'white' },
+    { step: 3, bakgrColor: '#FAFAFA', textColor: 'black' },
+  ]
 };
 export default CONSTANTS;

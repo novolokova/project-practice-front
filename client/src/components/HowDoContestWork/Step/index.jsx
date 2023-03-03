@@ -1,105 +1,43 @@
 import React from 'react';
-import CONSTANTS from '../../../constants'
-import styles from '../HowDoContestWork.module.sass';
+import CONSTANTS from '../../../constants';
+import styles from './Step.module.scss';
 
 const Step = (props) => {
-const{titleStep, steps, imgPath, alt}=props;
+  const { id, titleStep, steps, imgPath, alt, color } = props;
 
-    return (
+  const mapCard = (st, i) => (
+    <p key={i}>
+      <i className="fas fa-check" />
+      <span>{st}</span>
+    </p>
+  );
 
-    // Питання. У кожного степа свій колір контейнера, та в залежності від номеру степа рендер, не четний - просто .step
-    // четний - .stepReverse
-    
-
-
-    
-        <>
-           
-        <div className={styles.whiteContainer}>
-          <div className={styles.stepReverse}>
-            <div>
-              <h3>Step 1: Launch a Naming Contest</h3>
-              <p>
-                <i className='fas fa-check' />
-                <span>
-                  Start your project right with our proven Naming Brief
-                  template
-                </span>
-              </p>
-              <p>
-                <i className='fas fa-check' />
-                <span>
-                  We’ll walk you through exactly what you need to share about your project in order to get an awesome Name
-                </span>
-              </p>
-            </div>
-            <img
-              src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/1-compressed.gif`}
-              alt='compressed'
-            />
-          </div>
-        </div>
-
-
-
-
-        <div className={styles.greenContainer}>
+  return (
+    <>
+      <div
+        className={styles.container}
+        style={{ backgroundColor: color.bakgrColor, color: color.textColor }}
+      >
+        {!(id % 2) ? (
           <div className={styles.step}>
-            <img
-              src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/2-compressed-new.gif`}
-              alt='compressed'
-            />
-            <div className={styles.greenStep}>
-              <h3>Step 2: Ideas start pouring in within minutes</h3>
-              <p>
-                <i className='fas fa-check' />
-                <span>
-                  100s of naming experts start submitting name ideas
-                </span>
-              </p>
-              <p>
-                <i className='fas fa-check' />
-                <span>
-                  Names automatically checked for URL availability
-                </span>
-              </p>
+            <div className={styles.stepCard}>
+              <h3>{titleStep}</h3>
+              {steps.map(mapCard)}
+            </div>
+            <img src={`${CONSTANTS.STATIC_IMAGES_PATH}${imgPath}`} alt={alt} />
+          </div>
+        ) : (
+          <div className={styles.step}>
+            <img src={`${CONSTANTS.STATIC_IMAGES_PATH}${imgPath}`} alt={alt} />
+            <div className={styles.stepCard}>
+              <h3>{titleStep}</h3>
+              {steps.map(mapCard)}
             </div>
           </div>
-        </div>
-
-
-
-
-        <div className={styles.greyContainer}>
-          <div className={styles.stepReverse}>
-            <div>
-              <h3>Step 3: Rate Entries & Brainstorm with Creatives</h3>
-              <p>
-                <i className='fas fa-check' />
-                <span>Provide instant feedback on Names</span>
-              </p>
-              <p>
-                <i className='fas fa-check' />
-                <span>
-                  Send private feedback or public messages to all creatives
-                </span>
-              </p>
-              <p>
-                <i className='fas fa-check' />
-                <span>
-                  The more entries you rate - the submissions get better and
-                  better
-                </span>
-              </p>
-            </div>
-            <img
-              src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/3-compressed.gif`}
-              alt='compressed'
-            />
-          </div>
-        </div> 
-        </>
-    );
-}
+        )}
+      </div>
+    </>
+  );
+};
 
 export default Step;
