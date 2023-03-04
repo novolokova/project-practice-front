@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Form, Formik } from 'formik';
-import { checkAuth, clearAuth } from '../../store/slices/authSlice';
-import Schems from '../../utils/validators/validationSchems';
-import FormInput from '../FormInput/FormInput';
-import Error from '../Error/Error';
-import CONSTANTS from '../../constants';
+import { checkAuth, clearAuth } from '../../../store/slices/authSlice';
+import Schems from '../../../utils/validators/validationSchems';
+import FormInput from '../../FormInput/FormInput';
+import Error from '../../Error/Error';
+import CONSTANTS from '../../../constants';
 import styles from './LoginForm.module.sass';
 
 class LoginForm extends React.Component {
@@ -71,12 +71,10 @@ class LoginForm extends React.Component {
     );
   }
 }
-
 const mapStateToProps = (state) => {
   const { auth } = state;
   return { auth };
 };
-
 const mapDispatchToProps = (dispatch) => ({
   loginRequest: ({ data, history }) =>
     dispatch(checkAuth({ data, history, authMode: CONSTANTS.AUTH_MODE.LOGIN })),
