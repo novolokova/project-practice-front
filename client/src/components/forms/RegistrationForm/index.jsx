@@ -14,7 +14,6 @@ class RegistrationForm extends React.Component {
   componentWillUnmount() {
     this.props.authClear();
   }
-
   clicked = (values) => {
     this.props.register({
       data: {
@@ -28,7 +27,6 @@ class RegistrationForm extends React.Component {
       history: this.props.history,
     });
   };
-
   render() {
     const { submitting, auth, authClear } = this.props;
     const { error } = auth;

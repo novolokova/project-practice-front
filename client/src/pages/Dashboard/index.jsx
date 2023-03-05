@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import CONSTANTS from '../../constants';
 import CustomerDashboard from '../../components/CustomerDashboard/CustomerDashboard';
 import CreatorDashboard from '../../components/CreatorDashboard/CreatorDashboard';
 import Header from '../../components/Header';
+import CONSTANTS from '../../constants';
 
 const Dashboard = props => {
   const { role, history } = props;

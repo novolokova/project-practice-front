@@ -37,6 +37,7 @@ const PriceContent = (props) => {
       )}
     </li>
   );
+
   const mapItems = (item, i) => (
     <li key={i} data-tooltip={item.dataContent} className={styles.item}>
       <i className="fa fa-check"></i>
