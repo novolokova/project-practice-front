@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Field, Form, Formik } from 'formik';
+import Schems from '../../../utils/validators/validationSchems';
 import Error from '../../Error/Error';
 import { checkAuth, clearAuth } from '../../../store/slices/authSlice';
-import FormInput from '../../FormInput/FormInput';
+import FormInput from '../FormInput';
 import RoleInput from '../../RoleInput/RoleInput';
-import AgreeTermOfServiceInput from '../../AgreeTermOfServiceInput/AgreeTermOfServiceInput';
+import AgreeTermOfServiceInput from '../AgreeTermOfServiceInput';
 import CONSTANTS from '../../../constants';
-import Schems from '../../../utils/validators/validationSchems';
 import styles from './RegistrationForm.module.sass';
 
 class RegistrationForm extends React.Component {

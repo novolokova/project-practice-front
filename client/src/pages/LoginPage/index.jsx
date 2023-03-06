@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { clearAuthError } from '../../store/slices/authSlice';
 import HeaderRegistrAndLoginPage from '../../components/HeaderRegistrAndLoginPage';
-import LoginForm from '../../components/forms/LoginForm/LoginForm';
+import LoginForm from '../../components/forms/LoginForm';
 import styles from './LoginPage.module.sass';
 
 const LoginPage = (props) => (

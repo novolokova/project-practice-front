@@ -13,7 +13,7 @@ const WithPrivate = (Component, props) => {
     }
 
     render () {
-      if (this.props.error) return <Redirect to='/' />;
+     if (this.props.error) return <Redirect to='/' />;
 
       return (
         <>

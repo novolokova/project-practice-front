@@ -4,17 +4,17 @@ import { connect } from 'react-redux';
 import {
   addOffer,
   clearAddOfferError,
-} from '../../store/slices/contestByIdSlice';
-import Schems from '../../utils/validators/validationSchems';
-import ImageUpload from '../InputComponents/ImageUpload/ImageUpload';
-import FormInput from '../FormInput/FormInput';
-import Error from '../Error/Error';
-import CONTANTS from '../../constants';
+} from '../../../store/slices/contestByIdSlice';
+import Schems from '../../../utils/validators/validationSchems';
+import ImageUpload from '../../InputComponents/ImageUpload/ImageUpload';
+import FormInput from '../FormInput';
+import Error from '../../Error/Error';
+import CONSTANTS from '../../../constants';
 import styles from './OfferForm.module.sass';
 
 const OfferForm = (props) => {
   const renderOfferInput = () => {
-    if (props.contestType === CONTANTS.LOGO_CONTEST) {
+    if (props.contestType === CONSTANTS.LOGO_CONTEST) {
       return (
         <ImageUpload
           name="offerData"
@@ -55,7 +55,7 @@ const OfferForm = (props) => {
 
   const { valid, addOfferError, clearOfferError } = props;
   const validationSchema =
-    props.contestType === CONTANTS.LOGO_CONTEST
+    props.contestType === CONSTANTS.LOGO_CONTEST
       ? Schems.LogoOfferSchema
       : Schems.TextOfferSchema;
   return (

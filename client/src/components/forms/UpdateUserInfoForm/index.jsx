@@ -1,11 +1,11 @@
 import React from 'react';
 import { Form, Formik } from 'formik';
 import { connect } from 'react-redux';
-import { clearUserError } from '../../store/slices/userSlice';
-import Schems from '../../utils/validators/validationSchems';
-import ImageUpload from '../InputComponents/ImageUpload/ImageUpload';
-import FormInput from '../FormInput/FormInput';
-import Error from '../Error/Error';
+import { clearUserError } from '../../../store/slices/userSlice';
+import Schems from '../../../utils/validators/validationSchems';
+import ImageUpload from '../../InputComponents/ImageUpload/ImageUpload';
+import FormInput from '../FormInput';
+import Error from '../../Error/Error';
 import styles from './UpdateUserInfoForm.module.sass';
 
 const UpdateUserInfoForm = (props) => {

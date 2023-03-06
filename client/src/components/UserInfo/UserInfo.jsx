@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { updateUser } from '../../store/slices/userSlice';
 import { changeEditModeOnUserProfile } from '../../store/slices/userProfileSlice';
-import UpdateUserInfoForm from '../UpdateUserInfoForm/UpdateUserInfoForm';
+import UpdateUserInfoForm from '../forms/UpdateUserInfoForm';
 import CONSTANTS from '../../constants';
 import styles from './UserInfo.module.sass';
 

@@ -14,15 +14,14 @@ import {
 } from '../../store/slices/contestByIdSlice';
 import Header from '../../components/Header';
 import ContestSideBar from '../../components/ContestSideBar/ContestSideBar';
-import styles from './ContestPage.module.sass';
 import OfferBox from '../../components/OfferBox/OfferBox';
-import OfferForm from '../../components/OfferForm/OfferForm';
-import CONSTANTS from '../../constants';
+import OfferForm from '../../components/forms/OfferForm';
 import Brief from '../../components/Brief/Brief';
 import Spinner from '../../components/Spinner/Spinner';
 import TryAgain from '../../components/TryAgain/TryAgain';
-import 'react-image-lightbox/style.css';
 import Error from '../../components/Error/Error';
+import CONSTANTS from '../../constants';
+import styles from './ContestPage.module.sass';
 
 class ContestPage extends React.Component {
   componentWillUnmount () {
