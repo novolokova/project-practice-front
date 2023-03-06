@@ -13,10 +13,11 @@ import Payment from './pages/Payment/Payment';
 import StartContestPage from './pages/StartContestPage/';
 import Dashboard from './pages/Dashboard';
 import ContestPage from './pages/ContestPage/ContestPage';
-import UserProfile from './pages/UserProfile/UserProfile';
+import UserProfilePage from './pages/UserProfilePage';
 import NotFound from './components/NotFound/NotFound';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
 import CONSTANTS from './constants';
+
 
 const App = () => {
   return (
@@ -77,7 +78,7 @@ const App = () => {
         />
         <Route exact path="/dashboard" component={WithPrivate(Dashboard)} />
         <Route exact path="/contest/:id" component={WithPrivate(ContestPage)} />
-        <Route exact path="/account" component={WithPrivate(UserProfile)} />
+        <Route exact path="/account" component={WithPrivate(UserProfilePage)} />
         <Route component={NotFound} />
       </Switch>
       <ChatContainer />
