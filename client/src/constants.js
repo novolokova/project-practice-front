@@ -95,6 +95,11 @@ const CONSTANTS = {
     { step: 1, bakgrColor: '#fff', textColor: 'black' },
     { step: 2, bakgrColor: '#28D2D0', textColor: 'white' },
     { step: 3, bakgrColor: '#FAFAFA', textColor: 'black' },
-  ]
+  ],
+  REPLACE_TO_LINK:{
+    MANAGED_CONTEST_SERVICE: 'Managed Contest Service',
+    VIEW_SIMPLE_REPORT: 'View Sample Report',
+  }
+  
 };
 export default CONSTANTS;

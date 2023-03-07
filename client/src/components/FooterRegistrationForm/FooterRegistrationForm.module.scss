@@ -1,0 +1,22 @@
+.footer {
+  padding-top: 80px;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.articlesMainContainer {
+  width: 60%;
+  display: flex;
+  min-width: 300px;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 1150px;
+  flex-wrap: wrap;
+  @media (max-width: 1204px) {
+    max-height: none;
+  }
+
+.orangeSpan {
+  color: #f18762;
+}
+}
