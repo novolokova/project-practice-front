@@ -32,10 +32,24 @@ const PriceContent = (props) => {
     };
   }, []);
 
+  const colorLink = '#5aa7ff';
+
   const mapOptionsBefore = (item, i) => {
+    // ЧОМУ ТАК НЕ ВИХОДИТЬ ПРОПИСАТИ СТИЛІ?????
+
+    // const replaceContent = item.content.replace(
+    //   MANAGED_CONTEST_SERVICE,
+    //   `<a href="https://reactjs.org/" className={styles.orangeSpan}>${MANAGED_CONTEST_SERVICE}</a>`
+    // );
+
+    // const replaceContent = item.content.replace(
+    //   MANAGED_CONTEST_SERVICE,
+    //   `<a href="https://reactjs.org/" class="orangeSpan">${MANAGED_CONTEST_SERVICE}</a>`
+    // );
+
     const replaceContent = item.content.replace(
       MANAGED_CONTEST_SERVICE,
-      `<a href="https://reactjs.org/" style="color: #5aa7ff">${MANAGED_CONTEST_SERVICE}</a>`
+      `<a href="https://reactjs.org/" style="color: ${colorLink}">${MANAGED_CONTEST_SERVICE}</a>`
     );
     return (
       <li key={i} data-tooltip={item.tooltip} className={styles.li}>
@@ -56,7 +70,7 @@ const PriceContent = (props) => {
   const mapItems = (item, i) => {
     const replaceContent = item.item.replace(
       VIEW_SIMPLE_REPORT,
-      `<a href="https://reactjs.org/" style="color: #5aa7ff">${VIEW_SIMPLE_REPORT}</a>`
+      `<a href="https://reactjs.org/" style="color: ${colorLink}">${VIEW_SIMPLE_REPORT}</a>`
     );
     return (
       <li key={i} data-tooltip={item.dataContent} className={styles.item}>

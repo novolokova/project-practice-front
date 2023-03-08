@@ -7,7 +7,6 @@ const FooterRegistrationForm = () => {
   const mapArt = ({ title, describe }, i) => (
     <FooterArticle key={i} title={title} describe={describe} />
   );
- 
   return (
     <div className={styles.footer}>
       <div className={styles.articlesMainContainer}>{data.map(mapArt)}</div>
