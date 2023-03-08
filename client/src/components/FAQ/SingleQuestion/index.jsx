@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Close, Add } from '@mui/icons-material';
-import styles from '../AskedQuestions.module.scss';
+import styles from './SingleQuestion.module.scss';
 
 const SingleQuestion = (props) => {
   const [showInfo, setShowInfo] = useState(false);
@@ -16,10 +16,10 @@ const SingleQuestion = (props) => {
   return (
     <article className={showInfo ? styles.articleActive : styles.articleUnactive}>
       <header onClick={() => changeInfo()} className={styles.header}>
-        <h3>{question}</h3>
+        <h3 className={styles.title}>{question}</h3>
         <span className={styles.span}>{showInfo ? <Close /> : <Add />}</span>
       </header>
-      <div className={styles.wrap}>
+      <div className={styles.wrapAnswerList}>
         {showInfo && <ul>{showAnswer(answerList)}</ul>}
       </div>
     </article>

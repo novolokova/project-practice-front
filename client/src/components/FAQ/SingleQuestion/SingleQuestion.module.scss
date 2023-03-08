@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+  padding: 30px 70px 30px 40px;
+  cursor: pointer;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.span {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin: -12px 0 0 0;
+}
+
+.articleUnactive {
+  margin: 0 0 16px 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Product Sans', sans-serif;
+
+  .title {
+    color: #000;
+  }
+
+  .span {
+    color: #307df6;
+  }
+
+  .wrapAnswerList {
+    max-height: 0;
+    padding: 0 1em;
+    transition: all ease 0.5s;
+  }
+}
+
+.articleActive {
+  margin: 0 0 16px 0;
+  border-radius: 16px;
+  background: #307df6;
+
+  .title,
+  .span {
+    color: #fff;
+  }
+
+  .wrapAnswerList {
+    padding: 1em;
+    transition: all ease 0.75s;
+    max-height: 100vh;
+  }
+
+  .li {
+    margin: 0 15px 15px 15px;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 10px;
+    line-height: 1.5;
+  }
+}

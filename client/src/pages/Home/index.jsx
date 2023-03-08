@@ -8,13 +8,14 @@ import OurSponsors from '../../components/OurSponsors';
 import HomeWhySquadhelp from '../../components/HomeWhySquadhelp';
 import HowDoContestWork from '../../components/HowDoContestWork';
 import BrandableNames from '../../components/BrandableNames';
-import AskedQuestions from '../../components/AskedQuestions';
+import FAQ from '../../components/FAQ';
 import NamesForSale from '../../components/NamesForSale';
 import DashboardBtn from '../../components/DashboardBtn';
 import CustomersSay from '../../components/CustomersSay';
 import FindPerfectName from '../../components/FindPerfectName';
 import carouselConstants from '../../carouselConstants';
 import styles from './Home.module.sass';
+
 
 const Home = (props) => {
   const { isFetching } = props;
@@ -38,7 +39,7 @@ const Home = (props) => {
             <OurSponsors />
             <HowDoContestWork />
             <BrandableNames />
-            <AskedQuestions/>
+            <FAQ/>
             <NamesForSale />
             <SliderBar
               images={carouselConstants.exampleSliderImages}
