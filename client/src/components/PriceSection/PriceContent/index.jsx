@@ -36,21 +36,21 @@ const PriceContent = (props) => {
 
   const mapOptionsBefore = (item, i) => {
     // ЧОМУ ТАК НЕ ВИХОДИТЬ ПРОПИСАТИ СТИЛІ?????
-
+// 1 варіант
     // const replaceContent = item.content.replace(
     //   MANAGED_CONTEST_SERVICE,
-    //   `<a href="https://reactjs.org/" className={styles.orangeSpan}>${MANAGED_CONTEST_SERVICE}</a>`
+    //   `<a href="https://reactjs.org/" className={styles.replaceCont}>${MANAGED_CONTEST_SERVICE}</a>`
     // );
-
+// 2 варіант
     // const replaceContent = item.content.replace(
     //   MANAGED_CONTEST_SERVICE,
-    //   `<a href="https://reactjs.org/" class="orangeSpan">${MANAGED_CONTEST_SERVICE}</a>`
+    //   `<a href="https://reactjs.org/" class="replaceCont">${MANAGED_CONTEST_SERVICE}</a>`
     // );
-
     const replaceContent = item.content.replace(
       MANAGED_CONTEST_SERVICE,
       `<a href="https://reactjs.org/" style="color: ${colorLink}">${MANAGED_CONTEST_SERVICE}</a>`
     );
+    
     return (
       <li key={i} data-tooltip={item.tooltip} className={styles.li}>
         <span

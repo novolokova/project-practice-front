@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router , Route, Switch } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import browserHistory from './browserHistory';
 import WithPrivate from './components/HOC/WithPrivate';
@@ -21,7 +21,7 @@ import CONSTANTS from './constants';
 
 const App = () => {
   return (
-    <BrowserRouter history={browserHistory}>
+    <Router history={browserHistory}>
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -82,7 +82,7 @@ const App = () => {
         <Route component={NotFound} />
       </Switch>
       <ChatContainer />
-    </BrowserRouter>
+    </Router>
   );
 };
 
