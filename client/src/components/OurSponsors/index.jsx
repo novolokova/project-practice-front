@@ -1,7 +1,7 @@
 import React from 'react';
 import SponsorsLogo from './SponsorsLogo';
 import Statistic from './Statistic';
-import styles from './OurSponsors.module.sass';
+import styles from './OurSponsors.module.scss';
 
 const OurSponsors = () => {
   return (

@@ -1,0 +1,8 @@
+
+@use "src/common/styles/templates" as *;
+@use 'src/common/styles/colors' as color;
+
+.greyContainer{
+@extend .container;
+ background-color: color.$color-light-grey;
+}

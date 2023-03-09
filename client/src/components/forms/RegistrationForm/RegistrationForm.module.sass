@@ -1,3 +1,5 @@
+@import 'src/common/styles/colors'
+
 .signUpFormContainer
   width: 60%
   display: flex
@@ -29,7 +31,7 @@
     display: flex
     justify-content: center
     align-items: center
-    background-color: #28d2d0
+    background-color: $color-turquoise
     height: 64px
     margin-left: 20px
     padding: 0
@@ -42,11 +44,11 @@
 
   .inscription
     font-size: 16px
-    color: white
+    color: $color-white
 
   .termsOfService
     text-align: center
-    color: white
+    color: whi$color-white
     font-size: 16px
     min-width: 260px
     align-self: stretch
@@ -61,8 +63,8 @@
       flex-direction: row
       justify-content: center
       align-items: center
-      color: white
-      border: 1px solid #b72522
+      color: $color-white
+      border: 1px solid $color-error
       margin-bottom: 15px
       padding-bottom: 5px
       padding-top: 5px
@@ -72,7 +74,7 @@
       align-self: auto
 
     a
-      color: white
+      color: $color-white
       font-size: 16px
 
 
@@ -84,7 +86,7 @@
     align-self: stretch
     margin-right: 20px
     margin-left: 20px
-    border: 1px solid white
+    border: 1px solid $color-white
     background-color: red
     padding-top: 5px
     padding-bottom: 5px
@@ -119,8 +121,8 @@
         flex-direction: row
         justify-content: center
         align-items: center
-        color: white
-        border: 1px solid #b72522
+        color: $color-white
+        border: 1px solid $color-error
         margin-bottom: 15px
         padding-bottom: 5px
         padding-top: 5px
@@ -130,7 +132,7 @@
       background-color: white
       border: none
       border-radius: 4px
-      color: #9ca8b7
+      color: $color-medium-grey
       font-size: 18px
       padding: 23px 20px 23px 20px
       outline: none
@@ -140,10 +142,10 @@
         align-self: normal
 
     .notValid
-      border: 2px solid red !important
+      border: 2px solid $color-error !important
 
     .valid
-      border: 2px solid green
+      border: 2px solid $color-green
 
 
   .headerFormContainer
@@ -156,7 +158,7 @@
 
 
     h2
-      color: white
+      color: $color-white
       font-size: 42px
       font-weight: 600
       line-height: 1.1
@@ -165,7 +167,7 @@
       letter-spacing: 1px
 
     h4
-      color: white
+      color: $color-white
       font-size: 20px
       font-weight: 500
       word-spacing: 3px

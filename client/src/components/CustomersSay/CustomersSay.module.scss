@@ -1,0 +1,26 @@
+@use 'src/common/styles/templates' as *;
+@use 'src/common/styles/colors' as color;
+
+.whiteUnderline {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100px;
+    background: color.$color-white;
+  }
+}
+
+.blueContainer {
+  @extend .container;
+  background-color: color.$color-blue;
+  color: color.$color-white;
+  h2 {
+    margin-bottom: 40px;
+  }
+}

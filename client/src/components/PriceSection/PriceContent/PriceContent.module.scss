@@ -1,4 +1,4 @@
-
+@use "src/common/styles/colors" as color;
 
 // ЧОМУ ТАК НЕ ВИХОДИТЬ ПРОПИСАТИ СТИЛІ?????
 // його видно, але стилі не враховуються
@@ -42,9 +42,9 @@
 }
 
 .panelBody {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid color.$color-grey-2;
   padding: 5px 15px;
-  color: #555;
+  color: color.$color-medium-grey;
 
   .ul {
     display: flex;
@@ -55,7 +55,7 @@
     font-size: 16px;
     font-weight: 500;
     padding: 13px 0;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid color.$color-grey-2;
     line-height: 1.42;
   }
   
@@ -72,7 +72,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 45px;
-    color: white;
+    color: color.$color-white;
   }
 }
 
@@ -86,7 +86,7 @@
   }
   .panel:hover {
     .panelHeader {
-      box-shadow: 4px 9px 9px 4px rgba(109, 107, 107, 0.75);
+      box-shadow: 4px 9px 9px 4px color.$color-grey-shadow;
       object-fit: cover;
       transition: transform 0.5s;
     }
@@ -97,7 +97,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     border: 10px solid;
-    background-color: #fff;
+    background-color: color.$color-white;
     h2 {
       font-size: 33px;
       font-weight: 700;
@@ -112,7 +112,7 @@
 
     p {
       display: block;
-      color: #666;
+      color: color.$color-medium-grey;;
       font-size: 16px;
       font-weight: 500;
       min-height: 75px;
@@ -171,9 +171,9 @@
       width: 160px;
       padding: 10px 20px;
       display: none;
-      color: #555;
-      background: #f8f8f8;
-      border: 1px solid #979797;
+      color: color.$color-medium-grey;
+      background: color.$color-white;
+      border: 1px solid color.$color-grey-shadow;
       top: 50%;
       transform: translateY(-50%);
       left: 105%;
@@ -184,7 +184,7 @@
         height: 0;
         border-width: 10px;
         border-style: solid;
-        border-color: transparent #c9c8c8 transparent transparent;
+        border-color: transparent color.$color-grey-2 transparent transparent;
         top: 50%;
         transform: translateY(-50%);
         left: -10%;

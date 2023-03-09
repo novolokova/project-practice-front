@@ -1,9 +1,9 @@
 import React from 'react';
 import Flickity from 'react-flickity-component';
-
 import carouselConstants from '../../carouselConstants';
-import style from './SlideBar.module.sass';
 import './flickity.css';
+import style from './SlideBar.module.sass';
+
 
 const SliderBar = props => {
   const options = {

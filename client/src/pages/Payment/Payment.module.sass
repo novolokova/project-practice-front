@@ -1,6 +1,8 @@
+@import 'src/common/styles/colors'
+
 .header
   padding: 15px 0
-  box-shadow: 2px 1px 4px #ccc
+  box-shadow: 2px 1px 4px $color-grey-2
   box-sizing: border-box
   display: flex
   justify-content: center
@@ -8,12 +10,12 @@
 .errorMessage
   margin: 0 auto
   padding: 20px
-  background-color: red
+  background-color: $color-error
   border-radius: 12px
-  border: 2px solid #333
+  border: 2px solid $color-dark-grey
   text-align: center
   width: 300px
-  color: white
+  color: $color-white
   font-size: 16px
   text-transform: uppercase
   margin-top: 20px
@@ -44,7 +46,7 @@
       letter-spacing: 0.4px
       align-self: flex-end
       font-size: 18px
-      color: #28d2d0
+      color: $color-turquoise
       text-decoration: none
 
     .resultPriceContainer
@@ -62,10 +64,10 @@
     .orderHeader
       width: 100%
       font-size: 26px
-      color: #333
+      color: $color-dark-grey
       line-height: 1.4
       padding: 15px 0
-      border-bottom: 1px solid #eee
+      border-bottom: 1px solid $color-light-grey
 
     .packageInfoContainer
       width: 100%
@@ -73,12 +75,12 @@
       justify-content: space-between
       align-items: center
       padding: 25px 0 20px 0
-      border-bottom: 1px solid #eee
+      border-bottom: 1px solid $color-light-grey
 
       .packageName
         font-size: 18px
         font-weight: 300
-        color: #333
+        color: $color-dark-grey
         line-height: 1.4
 
       .packagePrice
@@ -93,7 +95,7 @@
     .headerLabel
       display: inline-block
       font-size: 26px
-      color: #333
+      color: $color-dark-grey
       padding: 35px 0 20px 0
 
 

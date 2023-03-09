@@ -1,3 +1,5 @@
+@import 'src/common/styles/colors'
+
 .errorContainer
   display: flex
   justify-content: center
@@ -13,7 +15,7 @@
   padding: 20px 0
   margin: 20px 30px
   align-self: stretch
-  border-top: 1px solid #f3f3f3
+  border-top: 1px solid $color-light-grey
 
 .mainContestInfoContainer
   display: flex
@@ -23,7 +25,7 @@
   margin: 0 25px
   margin-top: 20px
   padding-bottom: 25px
-  border-top: 1px solid #f3f3f3
+  border-top: 1px solid $color-light-grey
 
   .infoContainer
     display: flex
@@ -54,10 +56,10 @@
         font-size: 20px
         padding: 12px 28px
         border-radius: 8px
-        background-color: #8aca6b
+        background-color: color-light-green
 
         &:hover
-          background-color: #6b8ab1
+          background-color: $color-medium-blue
 
     .dataContainer
       align-self: stretch
@@ -73,7 +75,7 @@
         padding-top: 8px
         margin-bottom: 10px
         border: none
-        background-color: white
+        background-color: $color-white
         resize: none
         align-self: stretch
         overflow: visible
@@ -89,4 +91,4 @@
         text-decoration: underline
 
         &:hover
-          color: #6b89b0
+          color: $color-medium-blue

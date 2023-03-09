@@ -1,12 +1,11 @@
+@use "src/common/styles/colors" as color;
+
 .container{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-// max-width: 1920px;
 width: 100%;
-// min-width: 350px;
-
 padding: 30px 20px ;
 }
 
@@ -41,7 +40,7 @@ padding: 30px 20px ;
   }
   i {
     align-self: flex-start;
-    color: green;
+    color: color.$color-green;
     margin: 5px 10px 0 0;
   }
   span {

@@ -1,9 +1,11 @@
+@use "src/common/styles/colors" as color;
+
 .container {
   max-width: 830px;
   min-width: 350px;
   width: 100%;
   margin: auto;
-  color: #343434;
+  color: color.$color-dark-grey;
   font-weight: 400;
 
   .header {

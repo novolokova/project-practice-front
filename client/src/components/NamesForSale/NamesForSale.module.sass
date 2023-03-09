@@ -1,4 +1,6 @@
-@mixin underline
+@import 'src/common/styles/colors'
+
+.blueUnderline
   position: relative
   &:after
     position: absolute
@@ -10,11 +12,8 @@
     right: 0
     width: 100px
 
-.blueUnderline
-  @include underline
-
   &:after
-    background: #455A89
+    background: $color-medium-grey
 
 .headerBar
   display: flex

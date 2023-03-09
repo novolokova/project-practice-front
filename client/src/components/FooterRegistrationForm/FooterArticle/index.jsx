@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './FooterArticle.module.scss';
 import CONSTANTS from '../../../constants';
+import styles from './FooterArticle.module.scss';
 
 const FooterArticle = (props) => {
   const { title, describe } = props;

@@ -1,4 +1,6 @@
 
+ @import 'src/common/styles/colors'
+
 .headerContainer
   display: flex
   flex-direction: column
@@ -11,7 +13,7 @@
     display: flex
     justify-content: space-around
     align-items: center
-    border-bottom: 1px solid #ebebeb
+    border-bottom: 1px solid $color-grey
     @media(max-width: 920px)
       justify-content: center
     @media(max-width: 700px)
@@ -26,8 +28,8 @@
       text-align: center
       max-width: 340px
       padding: 10px 22px
-      border: 2px solid #28d2d0
-      color: #28d2d0
+      border: 2px solid $color-turquoise
+      color: $color-turquoise
       border-radius: 5px
       font-size: 14px
       font-weight: 400
@@ -35,7 +37,7 @@
 
       &:hover
         color: white
-        background-color: #28d2d0
+        background-color: $color-turquoise
 
     .leftNav
       display: flex
@@ -73,7 +75,7 @@
 
             &:hover
               span
-                color: #f27e51
+                color: $color-light-orange
 
               ul
                 display: block
@@ -114,7 +116,7 @@
                   color: #333
 
                   &:hover
-                    color: #f27e51
+                    color: $color-light-orange
 
             span
               color: #495d8b
@@ -128,7 +130,7 @@
     flex-direction: row
     align-items: center
     justify-content: space-around
-    border: 1px solid #ebebeb
+    border: 1px solid $color-grey
     margin-bottom: 13px
 
     .userButtonsContainer
@@ -136,7 +138,7 @@
       align-items: center
       justify-content: center
       display: flex
-      border-left: 1px solid #ebebeb
+      border-left: 1px solid $color-grey
       height: 40px
       @media(max-width: 600px)
         margin-left: 60px
@@ -147,14 +149,14 @@
 
       .emailIcon
         padding: 0 15px
-        border-right: 1px solid #ebebeb
+        border-right: 1px solid $color-grey
 
       .userInfo
         display: flex
         justify-content: center
         align-items: center
         padding: 0 15px
-        border-right: 1px solid #ebebeb
+        border-right: 1px solid $color-grey
 
         &:hover
           ul
@@ -201,7 +203,7 @@
         color: #718888
         font-weight: 400
         font-size: 14px
-        border-right: 1px solid #ebebeb
+        border-right: 1px solid $color-grey
 
     .numberContainer
       text-decoration: none
@@ -210,8 +212,8 @@
       justify-content: center
       align-items: center
       padding: 0 15px
-      border-right: 1px solid #ebebeb
-      border-left: 1px solid #ebebeb
+      border-right: 1px solid $color-grey
+      border-left: 1px solid $color-grey
       margin-left: 120px
       height: 40px
       @media(max-width: 600px)

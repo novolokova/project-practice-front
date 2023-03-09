@@ -1,6 +1,8 @@
+@use "src/common/styles/colors" as color;
+
 .footer {
   padding-top: 80px;
-  background: white;
+  background: color.$color-white;
   display: flex;
   justify-content: center;
 }
@@ -17,6 +19,6 @@
   }
 
 .orangeSpan {
-  color: #f18762;
+  color: color.$color-light-orange;
 }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import data from './data.json';
 import SliderBar from '../SliderBar';
 import carouselConstants from '../../carouselConstants';
-import styles from './CustomersSay.module.sass';
+import styles from './CustomersSay.module.scss';
 
 const CustomersSay = () => {
   return (

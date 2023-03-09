@@ -1,3 +1,5 @@
+@import 'src/common/styles/colors'
+
 .mainContainer
   width: 1200px
   margin: 0 auto
@@ -19,11 +21,11 @@
     padding: 15px
 
     .message
-      color: red
+      color: $color-error
       font-size: 18px
 
     .try
-      color: #333
+      color: $color-dark-grey
       font-size: 18px
 
   .contestsContainer
@@ -41,7 +43,8 @@
     flex-direction: column
     box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.1)
     align-items: flex-start
-    background-color: white
+    background-color: $color-white
+
     margin-bottom: 15px
     @media(max-width: 1000px)
       padding-top: 10px
@@ -54,7 +57,7 @@
       margin-top: 15px
       align-self: stretch
       text-align: center
-      color: #46568a
+      color: $color-dark-blue
       font-size: 18px
       border-radius: 10px
       padding: 10px
@@ -73,8 +76,8 @@
       font-size: 18px
       border-radius: 10px
       padding: 10px
-      background-color: #4e618d
-      color: white
+      background-color: $color-dark-blue
+      color: $color-white
       @media(max-width: 1000px)
         height: 20px
         margin: 0 5px

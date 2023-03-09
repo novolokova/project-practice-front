@@ -1,3 +1,5 @@
+@import 'src/common/styles/colors'
+
 .loginForm
   width: 600px
   display: flex
@@ -14,7 +16,7 @@
     display: flex
     justify-content: center
     align-items: center
-    background-color: #28d2d0
+    background-color: $color-turquoise
     height: 64px
     margin-left: 20px
     padding: 0
@@ -27,7 +29,7 @@
 
   .inscription
     font-size: 16px
-    color: white
+    color: $color-white
 
   .inputContainer
     display: flex
@@ -43,18 +45,18 @@
       flex-direction: row
       justify-content: center
       align-items: center
-      color: white
-      border: 1px solid #b72522
+      color: $color-white
+      border: 1px solid $color-error
       margin-bottom: 15px
       padding-bottom: 5px
       padding-top: 5px
       text-align: center
 
     .input
-      background-color: white
+      background-color: $color-white
       border: none
       border-radius: 4px
-      color: #9ca8b7
+      color: $color-medium-grey
       font-size: 18px
       padding: 23px 20px 23px 20px
       outline: none
@@ -64,21 +66,21 @@
         align-self: normal
 
     .notValid
-      border: 2px solid red !important
+      border: 2px solid $color-error !important
 
     .valid
-      border: 2px solid green
+      border: 2px solid $color-green
 
 
   .error
     align-self: stretch
     margin-right: 40px
     margin-left: 40px
-    background: red
-    color: white
+    background: $color-error
+    color: $color-white
     font-size: 17px
     letter-spacing: 0.6px
-    border: 1px solid white
+    border: 1px solid $color-white
     border-radius: 8px
     text-align: center
     padding-right: 30px
@@ -106,7 +108,7 @@
     text-align: center
     font-size: 34px
     letter-spacing: 0.6px
-    color: white
+    color: $color-white
     margin-top: 20px
     margin-bottom: 28px
     

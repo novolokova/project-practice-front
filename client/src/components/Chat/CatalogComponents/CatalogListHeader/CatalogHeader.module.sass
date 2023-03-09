@@ -1,11 +1,13 @@
+@import 'src/common/styles/colors'
+
 .headerContainer
   height: 50px
-  background-color: #4e618d
+  background-color: $color-dark-blue
   display: flex
   align-items: center
   justify-content: flex-start
   padding-left: 15px
-  border-bottom: 1px solid #f3f3f3
+  border-bottom: 1px solid $color-light-grey
   z-index: 600
 
   button
@@ -18,7 +20,7 @@
   i
     cursor: pointer
     font-size: 24px
-    color: white
+    color: color-white
     transition: font-size 0.2s
 
     &:hover
@@ -69,7 +71,7 @@
         justify-content: center
         align-items: center
         color: white
-        border: 1px solid #b72522
+        border: 1px solid $color-error
         text-align: center
 
       .input
@@ -84,4 +86,4 @@
         outline: none
 
       .notValid
-        border: 0.5px solid red !important
+        border: 0.5px solid $color-error !important

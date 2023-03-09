@@ -1,3 +1,5 @@
+@use "src/common/styles/colors" as color;
+
 .header {
   position: relative;
   padding: 30px 70px 30px 40px;
@@ -16,17 +18,17 @@
 
 .articleUnactive {
   margin: 0 0 16px 0;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid color.$color-grey;
   border-radius: 16px;
   cursor: pointer;
   font-family: 'Product Sans', sans-serif;
 
   .title {
-    color: #000;
+    color: color.$color-black;
   }
 
   .span {
-    color: #307df6;
+    color: color.$color-blue;
   }
 
   .wrapAnswerList {
@@ -39,11 +41,11 @@
 .articleActive {
   margin: 0 0 16px 0;
   border-radius: 16px;
-  background: #307df6;
+  background:  color.$color-blue;
 
   .title,
   .span {
-    color: #fff;
+    color: color.$color-white;
   }
 
   .wrapAnswerList {
@@ -55,7 +57,7 @@
   .li {
     margin: 0 15px 15px 15px;
     font-size: 16px;
-    color: #fff;
+    color: color.$color-white;
     padding-top: 10px;
     line-height: 1.5;
   }

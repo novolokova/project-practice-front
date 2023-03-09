@@ -1,3 +1,5 @@
+@import 'src/common/styles/colors'
+
 .mainContainer
   margin: 0 auto
   display: flex
@@ -15,7 +17,7 @@
 
   .notMoney
     margin-bottom: 20px
-    color: #455a89
+    color: $color-dark-blue
     font-size: 18px
     font-weight: 500
 
@@ -43,7 +45,7 @@
       align-self: stretch
       font-size: 18px
       padding: 20px 26px
-      background-color: #f3f3f3
+      background-color: $color-white
       font-weight: 500
 
     .optionsContainer
@@ -59,7 +61,7 @@
         border-radius: 8px
         margin-top: 5px
         cursor: pointer
-        color: #455a89
+        color: $color-dark-blue
         font-size: 16px
         font-weight: 600
         padding: 14px 58px
@@ -68,9 +70,9 @@
           text-align: center
 
         &:hover
-          background-color: #455a89
-          color: white
+          background-color: $color-dark-blue
+          color: $color-white
 
       .currentOption
-        background-color: #455a89
-        color: white
+        background-color: $color-dark-blue
+        color: $color-white

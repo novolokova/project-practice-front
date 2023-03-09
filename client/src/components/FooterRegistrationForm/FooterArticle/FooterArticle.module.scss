@@ -1,7 +1,9 @@
+@use "src/common/styles/colors" as color;
+
 .headerArticle {
   font-size: 16px;
   font-weight: 500;
-  color: #363945;
+  color: color.$color-dark-cyan;
   margin-bottom: 20px;
   width: 50%;
   padding-right: 20px;
@@ -27,5 +29,5 @@
 }
 
 .orangeSpan {
-  color: #f18762;
+  color: color.$color-light-orange;
 }
