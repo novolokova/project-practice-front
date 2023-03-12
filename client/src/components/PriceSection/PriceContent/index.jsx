@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import styles from './PriceContent.module.scss';
 import CONSTANTS from '../../../constants';
 const {
-  REPLACE_TO_LINK: { MANAGED_CONTEST_SERVICE, VIEW_SIMPLE_REPORT },
+  REPLACE_TO_LINK: {
+    MANAGED_CONTEST_SERVICE,
+    VIEW_SIMPLE_REPORT,
+    COLOR_REPLACE,
+  },
 } = CONSTANTS;
 
 const PriceContent = (props) => {
@@ -31,29 +35,13 @@ const PriceContent = (props) => {
       window.removeEventListener('resize', handleSize);
     };
   }, []);
-// color.$color-light-blue
-  const colorLink = '#5aa7ff';
 
   const mapOptionsBefore = (item, i) => {
-    // ЧОМУ ТАК НЕ ВИХОДИТЬ ПРОПИСАТИ СТИЛІ?????
-// 1 варіант
-//     const replaceContent = item.content.replace(
-//       MANAGED_CONTEST_SERVICE,
-// `<a href="https://reactjs.org/" className=${styles.replaceCont}>${MANAGED_CONTEST_SERVICE}</a>`
-
-//     );
-// 2 варіант
-    // const replaceContent = item.content.replace(
-    //   MANAGED_CONTEST_SERVICE,
-    //   `<a href="https://reactjs.org/" class="replaceCont">${MANAGED_CONTEST_SERVICE}</a>`
-    // );
-
-
     const replaceContent = item.content.replace(
       MANAGED_CONTEST_SERVICE,
-      `<a href="https://reactjs.org/" style="color: ${colorLink}">${MANAGED_CONTEST_SERVICE}</a>`
+      `<a href="https://reactjs.org/" style="color: ${COLOR_REPLACE}">${MANAGED_CONTEST_SERVICE}</a>`
     );
-    
+
     return (
       <li key={i} data-tooltip={item.tooltip} className={styles.li}>
         <span
@@ -73,7 +61,7 @@ const PriceContent = (props) => {
   const mapItems = (item, i) => {
     const replaceContent = item.item.replace(
       VIEW_SIMPLE_REPORT,
-      `<a href="https://reactjs.org/" style="color: ${colorLink}">${VIEW_SIMPLE_REPORT}</a>`
+      `<a href="https://reactjs.org/" style="color: ${COLOR_REPLACE}">${VIEW_SIMPLE_REPORT}</a>`
     );
     return (
       <li key={i} data-tooltip={item.dataContent} className={styles.item}>

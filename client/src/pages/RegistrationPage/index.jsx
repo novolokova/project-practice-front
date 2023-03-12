@@ -6,6 +6,7 @@ import RegistrationForm from '../../components/forms/RegistrationForm';
 import FooterRegistrationForm from '../../components/FooterRegistrationForm';
 import styles from './RegistrationPage.module.sass';
 
+
 const RegistrationPage = (props) => {
   props.clearError();
 

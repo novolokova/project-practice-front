@@ -99,6 +99,7 @@ const CONSTANTS = {
   REPLACE_TO_LINK:{
     MANAGED_CONTEST_SERVICE: 'Managed Contest Service',
     VIEW_SIMPLE_REPORT: 'View Sample Report',
+    COLOR_REPLACE: '#5aa7ff'
   }
   
 };

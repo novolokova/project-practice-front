@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../../components/Logo';
+import Logo from '../Logo';
 import CONSTANTS from '../../constants';
+
 import styles from './HeaderRegistrAndLoginPage.module.scss';
 
 const HeaderRegistrAndLoginPage = () => {

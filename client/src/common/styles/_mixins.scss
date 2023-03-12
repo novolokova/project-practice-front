@@ -1,10 +1,15 @@
-@mixin innerContainer
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  width: 100%
-  padding: 40px 0 30px 0
+@mixin border-style($size, $color, $style) {
+  border: {
+  width: $size;
+  color: $color;
+  style: $style;
+  }
+}
 
-
-
+@mixin border-bottom-style($size, $color, $style) {
+  border-bottom: {
+  width: $size;
+  color: $color;
+  style: $style;
+  }
+}

@@ -1,14 +1,5 @@
-@use "src/common/styles/colors" as color;
-
-// ЧОМУ ТАК НЕ ВИХОДИТЬ ПРОПИСАТИ СТИЛІ?????
-// його видно, але стилі не враховуються
-.replaceCont{
-  color: red;
-  // color: #5aa7ff;
-  border: 1px solid red;
-}
-
-
+@use 'src/common/styles/colors' as color;
+@use 'src/common/styles/mixins' as mixin;
 
 .panel {
   margin: 5px 0 15px 0;
@@ -55,10 +46,10 @@
     font-size: 16px;
     font-weight: 500;
     padding: 13px 0;
-    border-bottom: 2px solid color.$color-grey-2;
+    @include mixin.border-bottom-style(2px, color.$color-grey-2, solid);
     line-height: 1.42;
   }
-  
+
   .item {
     padding: 13px 0;
     padding-left: 15px;
@@ -112,7 +103,7 @@
 
     p {
       display: block;
-      color: color.$color-medium-grey;;
+      color: color.$color-medium-grey;
       font-size: 16px;
       font-weight: 500;
       min-height: 75px;
